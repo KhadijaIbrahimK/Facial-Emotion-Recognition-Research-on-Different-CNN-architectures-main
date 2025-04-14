@@ -1,19 +1,55 @@
-Facial-Emotion-Recognition: Research on Different CNN Architectures
-This repository presents a comparative research project on Facial Emotion Recognition (FER) using various Convolutional Neural Network (CNN) architectures. The project evaluates and contrasts the performance of multiple deep learning models in detecting and classifying human emotions from facial expressions.
+🧠 Project Overview
+This study explores the effectiveness of various convolutional neural network (CNN) architectures in detecting human emotions from facial expressions. The goal is to determine which model architecture offers the best balance of accuracy, speed, and generalization across a standardized dataset.
 
-🧠 Objective
-The primary goal is to explore and benchmark different CNN-based models for the task of facial emotion recognition, focusing on performance, accuracy, and efficiency across architectures.
+🔧 Technologies Used
+Python
 
-📁 Project Structure
-File/Notebook	Description
-Base_model.ipynb	A simple baseline CNN model for initial experimentation and benchmarking.
-Dense Net.ipynb	Implementation and training of DenseNet architecture for FER.
-Highway Net.ipynb	Utilizes Highway Networks for improved information flow in deep layers.
-Pyramidal Net.ipynb	Pyramidal network structure with gradually decreasing feature maps.
-VGG 16.ipynb	Transfer learning approach using pretrained VGG-16 for emotion recognition.
-Wide ResNet.ipynb	Wide Residual Network implementation for deeper representation and learning.
-trainmodel.ipynb	Unified notebook for training different models and comparing performance.
-realtimedetection.py	Real-time emotion detection using webcam and the trained model.
-emotiondetector_latest.json	Contains the model configuration or label mapping used for real-time detection.
-pretrained_for_dense_net.ipynb	Notebook for loading and evaluating pretrained DenseNet model.
-README.md	This documentation file.
+NumPy
+
+TensorFlow
+
+Keras
+
+Matplotlib
+
+Seaborn
+
+🖼️ Dataset & Preprocessing
+Images resized to 48x48 grayscale for uniform input dimensions.
+
+Converted images to NumPy arrays.
+
+Normalized pixel values to the [0,1] range for faster convergence.
+
+🏗️ Model Architectures Trained
+The following deep learning models were implemented and trained:
+
+✅ Basic CNN
+
+🔳 WideResNet
+
+🔺 Pyramidal Net
+
+🧱 VGG16-based Model
+
+🚦 HighwayNet
+
+🌐 DenseNet
+
+📈 Performance Evaluation
+Each model was evaluated using:
+
+Accuracy and loss curves
+
+Confusion matrices
+
+Training vs Validation analysis
+
+Visualizations using Matplotlib and Seaborn for interpretability.
+
+📊 Results & Insights
+Quantitative Metrics: Tracked training/validation accuracy and loss to identify overfitting or underfitting.
+
+Qualitative Analysis: Visualized predictions vs actual emotions on test samples.
+
+Insights were drawn to identify strengths and weaknesses of each model in recognizing complex emotions.
